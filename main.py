@@ -3,14 +3,21 @@ import time
 #git
 while True:
 
-    annexe.LotDeFonction.depart()
-    annexe.frame = annexe.frame + 1
-   
+ 
+    annexe.afficher()
+    
+    
+    if annexe.frame < 100:
+    
+        annexe.frame = annexe.frame + 1
+        annexe.okchoixplus = annexe.okchoixplus + 1
             
     
-    if annexe.frame > 100:
-            
-            annexe.frame = 0  
+        if annexe.okchoixplus > 3:
+            annexe.okchoixplus = 0
+        
+    
+
             
     
     
